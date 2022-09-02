@@ -10,12 +10,14 @@
 		F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0828C2490100F021F2 /* AppDelegate.swift */; };
 		F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0A28C2490100F021F2 /* SceneDelegate.swift */; };
 		F5922B0D28C2490100F021F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0C28C2490100F021F2 /* ViewController.swift */; };
-		F5922B1028C2490100F021F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5922B0E28C2490100F021F2 /* Main.storyboard */; };
 		F5922B1228C2490500F021F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5922B1128C2490500F021F2 /* Assets.xcassets */; };
 		F5922B1528C2490500F021F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5922B1328C2490500F021F2 /* LaunchScreen.storyboard */; };
 		F5922B2028C2490500F021F2 /* fakturyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B1F28C2490500F021F2 /* fakturyTests.swift */; };
 		F5922B2A28C2490500F021F2 /* fakturyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B2928C2490500F021F2 /* fakturyUITests.swift */; };
 		F5922B2C28C2490500F021F2 /* fakturyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B2B28C2490500F021F2 /* fakturyUITestsLaunchTests.swift */; };
+		F5922B3A28C24A3B00F021F2 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B3928C24A3B00F021F2 /* FirstScreen.swift */; };
+		F5922B3C28C24DAF00F021F2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B3B28C24DAF00F021F2 /* Coordinator.swift */; };
+		F5922B3E28C251F200F021F2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B3D28C251F200F021F2 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		F5922B0828C2490100F021F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5922B0A28C2490100F021F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F5922B0C28C2490100F021F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5922B0F28C2490100F021F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5922B1128C2490500F021F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5922B1428C2490500F021F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5922B1628C2490500F021F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		F5922B2528C2490500F021F2 /* fakturyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fakturyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5922B2928C2490500F021F2 /* fakturyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakturyUITests.swift; sourceTree = "<group>"; };
 		F5922B2B28C2490500F021F2 /* fakturyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakturyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5922B3928C24A3B00F021F2 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		F5922B3B28C24DAF00F021F2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F5922B3D28C251F200F021F2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,15 @@
 		F5922B0728C2490100F021F2 /* faktury */ = {
 			isa = PBXGroup;
 			children = (
+				F5922B3828C24A1C00F021F2 /* View */,
 				F5922B0828C2490100F021F2 /* AppDelegate.swift */,
 				F5922B0A28C2490100F021F2 /* SceneDelegate.swift */,
 				F5922B0C28C2490100F021F2 /* ViewController.swift */,
-				F5922B0E28C2490100F021F2 /* Main.storyboard */,
 				F5922B1128C2490500F021F2 /* Assets.xcassets */,
 				F5922B1328C2490500F021F2 /* LaunchScreen.storyboard */,
 				F5922B1628C2490500F021F2 /* Info.plist */,
+				F5922B3B28C24DAF00F021F2 /* Coordinator.swift */,
+				F5922B3D28C251F200F021F2 /* MainCoordinator.swift */,
 			);
 			path = faktury;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				F5922B2B28C2490500F021F2 /* fakturyUITestsLaunchTests.swift */,
 			);
 			path = fakturyUITests;
+			sourceTree = "<group>";
+		};
+		F5922B3828C24A1C00F021F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5922B3928C24A3B00F021F2 /* FirstScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +247,6 @@
 			files = (
 				F5922B1528C2490500F021F2 /* LaunchScreen.storyboard in Resources */,
 				F5922B1228C2490500F021F2 /* Assets.xcassets in Resources */,
-				F5922B1028C2490100F021F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5922B3A28C24A3B00F021F2 /* FirstScreen.swift in Sources */,
+				F5922B3E28C251F200F021F2 /* MainCoordinator.swift in Sources */,
 				F5922B0D28C2490100F021F2 /* ViewController.swift in Sources */,
+				F5922B3C28C24DAF00F021F2 /* Coordinator.swift in Sources */,
 				F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */,
 				F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5922B0E28C2490100F021F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5922B0F28C2490100F021F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5922B1328C2490500F021F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +450,6 @@
 				INFOPLIST_FILE = faktury/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +477,6 @@
 				INFOPLIST_FILE = faktury/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
