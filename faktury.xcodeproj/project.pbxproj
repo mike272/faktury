@@ -103,6 +103,8 @@
 		F5922B0728C2490100F021F2 /* faktury */ = {
 			isa = PBXGroup;
 			children = (
+				F5922B4028C2654200F021F2 /* Coordinator */,
+				F5922B3F28C2653500F021F2 /* Controller */,
 				F5922B3828C24A1C00F021F2 /* View */,
 				F5922B0828C2490100F021F2 /* AppDelegate.swift */,
 				F5922B0A28C2490100F021F2 /* SceneDelegate.swift */,
@@ -139,6 +141,20 @@
 				F5922B3928C24A3B00F021F2 /* FirstScreen.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F5922B3F28C2653500F021F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5922B4028C2654200F021F2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

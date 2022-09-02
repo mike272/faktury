@@ -10,10 +10,12 @@ import UIKit
 class ViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     
+    var firstScreen = FirstScreen()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        view = firstScreen
     }
 
 
