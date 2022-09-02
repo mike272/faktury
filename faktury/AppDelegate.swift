@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         coordinator.navigationController = navVC
         
         let _window = UIWindow(frame: UIScreen.main.bounds)
+        _window.rootViewController = navVC
         _window.makeKeyAndVisible()
         self.window = _window
         
