@@ -25,6 +25,7 @@ class FirstScreen: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
         
         setupTitleLabel()
         setupStackView()
@@ -35,6 +36,7 @@ class FirstScreen: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
+        setupTitleLabel()
         setupStackView()
         addSubViewsToStack()
     }
@@ -45,6 +47,7 @@ class FirstScreen: UIView {
         stackView.distribution = .fillProportionally
         stackView.spacing = 20
         
+        setConstraintsForStackView()
     }
     
     func setConstraintsForStackView(){
@@ -76,8 +79,8 @@ class FirstScreen: UIView {
 
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
-            titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 20)
+            titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 0),
+            titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 0)
         ])
     }
 
