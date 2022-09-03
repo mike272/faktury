@@ -23,14 +23,16 @@ class ApprovalView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
-        
-       
+        setUpLabels()
+       setUpButtons()
         
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         backgroundColor = .white
+        setUpLabels()
+        setUpButtons()
 
         
     }
@@ -44,6 +46,10 @@ class ApprovalView: UIView {
         transactionTitleLabel.text = "test2"
         transactionAmountLabel.text = "test3"
         
+        
+        addSubview(verticalStackView)
+        setConstraintsForStackView()
+
         verticalStackView.addArrangedSubview(accountNumberLabel)
         verticalStackView.addArrangedSubview(transactionTitleLabel)
         verticalStackView.addArrangedSubview(transactionAmountLabel)
@@ -52,6 +58,7 @@ class ApprovalView: UIView {
     
     func setUpButtons(){
         horizontalStackView.axis = .horizontal
+        horizontalStackView.distribution = .fillEqually
         horizontalStackView.spacing = 20
         
         goBackButton.buttonSetUp(text: "Go Back")
@@ -60,6 +67,16 @@ class ApprovalView: UIView {
         
         horizontalStackView.addArrangedSubview(goBackButton)
         horizontalStackView.addArrangedSubview(approveButton)
+    }
+    
+    func setConstraintsForStackView(){
+        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            verticalStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 60),
+            verticalStackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            verticalStackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            verticalStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -40)
+        ])
     }
     
 
