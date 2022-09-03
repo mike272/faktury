@@ -11,14 +11,12 @@ class ApprovalViewController: UIViewController, Coordinating {
 
         var coordinator: Coordinator?
         
+    var myApprovalView = ApprovalView(frame: UIScreen.main.bounds)
         
-        override func loadView() {
-            super.view = ApprovalView(frame: UIScreen.main.bounds)
-        }
-
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
+            view.addSubview(myApprovalView)
         }
 
 

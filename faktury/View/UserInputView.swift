@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class UserInputView: UIView {
     
@@ -23,6 +25,7 @@ class UserInputView: UIView {
     
     var submitButton = CustomButton()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
@@ -30,6 +33,7 @@ class UserInputView: UIView {
         setupTitleLabel()
         setupStackView()
         addSubViewsToStack()
+                
         
     }
     

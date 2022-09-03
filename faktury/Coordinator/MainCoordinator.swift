@@ -18,6 +18,15 @@ class MainCoordinator: Coordinator{
     }
     
     func eventOccured(with type: Event) {
+        switch type{
+        case .showSummary:
+            let vc = ApprovalViewController()
+            
+            navigationController?.pushViewController(vc, animated: true)
+            break
+        case .showFinalisationScreen:
+            break
+        }
     }
     
     
