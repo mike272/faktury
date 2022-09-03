@@ -55,13 +55,46 @@ class FirstScreen: UIView {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: titleLabel.topAnchor, constant: 40),
             stackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            stackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 20),
-            stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 60)
+            stackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -60)
         ])
     }
     
     func addSubViewsToStack(){
+     
         
+        
+        
+        accountNumberLabel.text = "Account Number"
+        amountLabel.text = "Transaction Amount"
+        transferTitleLabel.text = "Transaction Title"
+        
+        accountNumberTF.placeholder = "012345"
+        amountTF.placeholder = "200"
+        transferTitleTF.placeholder = "Transfer of funds"
+        
+        accountNumberTF.borderStyle = .roundedRect
+        amountTF.borderStyle = .roundedRect
+        transferTitleTF.borderStyle = .roundedRect
+
+
+        stackView.addArrangedSubview(accountNumberLabel)
+        stackView.addArrangedSubview(accountNumberTF)
+        
+        stackView.addArrangedSubview(amountLabel)
+        stackView.addArrangedSubview(amountTF)
+        
+        stackView.addArrangedSubview(transferTitleLabel)
+        stackView.addArrangedSubview(transferTitleTF)
+        
+        submitButton.setTitle("Submit", for: .normal)
+        submitButton.backgroundColor = .systemBlue
+        submitButton.setTitleColor(.black, for: .normal)
+        
+
+        stackView.addArrangedSubview(submitButton)
+        
+       
     }
     
     func setupTitleLabel(){
@@ -78,7 +111,7 @@ class FirstScreen: UIView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0),
             titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 0),
             titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 0)
         ])
