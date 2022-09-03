@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstScreen: UIView {
+class UserInputView: UIView {
     
     var stackView = UIStackView()
     

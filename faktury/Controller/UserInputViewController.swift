@@ -7,17 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, Coordinating {
+class UserInputViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     
     
     override func loadView() {
-        super.view = FirstScreen(frame: UIScreen.main.bounds)
+        super.view = UserInputView(frame: UIScreen.main.bounds)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func tappedButton(){
+        coordinator?.eventOccured(with: .showSummary)
     }
 
 
