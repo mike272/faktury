@@ -21,7 +21,7 @@ class FirstScreen: UIView {
     var amountTF = UITextField()
     var transferTitleTF = UITextField()
     
-    var submitButton = UIButton()
+    var submitButton = CustomButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,7 +53,7 @@ class FirstScreen: UIView {
     func setConstraintsForStackView(){
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: titleLabel.topAnchor, constant: 40),
+            stackView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40),
             stackView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
             stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -60)
@@ -87,9 +87,7 @@ class FirstScreen: UIView {
         stackView.addArrangedSubview(transferTitleLabel)
         stackView.addArrangedSubview(transferTitleTF)
         
-        submitButton.setTitle("Submit", for: .normal)
-        submitButton.backgroundColor = .systemBlue
-        submitButton.setTitleColor(.black, for: .normal)
+        submitButton.buttonSetUp(text: "Submit")
         
 
         stackView.addArrangedSubview(submitButton)
@@ -111,7 +109,7 @@ class FirstScreen: UIView {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0),
+            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -10),
             titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 0),
             titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 0)
         ])

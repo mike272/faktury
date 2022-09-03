@@ -18,7 +18,6 @@ class MainCoordinator: Coordinator{
     }
     
     func eventOccured(with type: Event) {
-        
     }
     
     
