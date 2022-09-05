@@ -11,6 +11,7 @@
 		5523A4E87EA7571C1B2BA49D /* Pods_faktury.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4171A3C711F1963858E32 /* Pods_faktury.framework */; };
 		5D92421128C5D45D009AEA87 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421028C5D45D009AEA87 /* SummaryView.swift */; };
 		5D92421328C5F51C009AEA87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421228C5F51B009AEA87 /* SummaryViewController.swift */; };
+		5D92421628C606ED009AEA87 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421528C606ED009AEA87 /* ViewModel.swift */; };
 		C6A6937596D767882BFB9D45 /* Pods_faktury_fakturyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4406F8D9CEB62AD41150AC48 /* Pods_faktury_fakturyUITests.framework */; };
 		F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0828C2490100F021F2 /* AppDelegate.swift */; };
 		F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0A28C2490100F021F2 /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 		4E16FC2CA008D229B5CEB57E /* Pods-faktury-fakturyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faktury-fakturyUITests.debug.xcconfig"; path = "Target Support Files/Pods-faktury-fakturyUITests/Pods-faktury-fakturyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D92421028C5D45D009AEA87 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		5D92421228C5F51B009AEA87 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		5D92421528C606ED009AEA87 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		73366C80F699AB979D701F2D /* Pods-faktury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faktury.debug.xcconfig"; path = "Target Support Files/Pods-faktury/Pods-faktury.debug.xcconfig"; sourceTree = "<group>"; };
 		7E1C1DF78725D8E216BB866F /* Pods_fakturyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakturyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06375B5D8F52E0B6F126C1F /* Pods-fakturyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakturyTests.release.xcconfig"; path = "Target Support Files/Pods-fakturyTests/Pods-fakturyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5D92421428C606CB009AEA87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D92421528C606ED009AEA87 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		BCE985D1B353A78ECDF72867 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		F5922B0728C2490100F021F2 /* faktury */ = {
 			isa = PBXGroup;
 			children = (
+				5D92421428C606CB009AEA87 /* ViewModel */,
 				F5922B4028C2654200F021F2 /* Coordinator */,
 				F5922B3F28C2653500F021F2 /* Controller */,
 				F5922B3828C24A1C00F021F2 /* View */,
@@ -460,6 +471,7 @@
 				F5922B4428C36AAC00F021F2 /* ApprovalView.swift in Sources */,
 				5D92421128C5D45D009AEA87 /* SummaryView.swift in Sources */,
 				F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */,
+				5D92421628C606ED009AEA87 /* ViewModel.swift in Sources */,
 				F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
