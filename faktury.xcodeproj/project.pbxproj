@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		37F9310A53DE7DDB5853E2F6 /* Pods_fakturyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1C1DF78725D8E216BB866F /* Pods_fakturyTests.framework */; };
 		5523A4E87EA7571C1B2BA49D /* Pods_faktury.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA4171A3C711F1963858E32 /* Pods_faktury.framework */; };
+		5D92421128C5D45D009AEA87 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421028C5D45D009AEA87 /* SummaryView.swift */; };
+		5D92421328C5F51C009AEA87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421228C5F51B009AEA87 /* SummaryViewController.swift */; };
 		C6A6937596D767882BFB9D45 /* Pods_faktury_fakturyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4406F8D9CEB62AD41150AC48 /* Pods_faktury_fakturyUITests.framework */; };
 		F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0828C2490100F021F2 /* AppDelegate.swift */; };
 		F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0A28C2490100F021F2 /* SceneDelegate.swift */; };
@@ -47,6 +49,8 @@
 		3FA4171A3C711F1963858E32 /* Pods_faktury.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faktury.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4406F8D9CEB62AD41150AC48 /* Pods_faktury_fakturyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faktury_fakturyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E16FC2CA008D229B5CEB57E /* Pods-faktury-fakturyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faktury-fakturyUITests.debug.xcconfig"; path = "Target Support Files/Pods-faktury-fakturyUITests/Pods-faktury-fakturyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D92421028C5D45D009AEA87 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		5D92421228C5F51B009AEA87 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		73366C80F699AB979D701F2D /* Pods-faktury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faktury.debug.xcconfig"; path = "Target Support Files/Pods-faktury/Pods-faktury.debug.xcconfig"; sourceTree = "<group>"; };
 		7E1C1DF78725D8E216BB866F /* Pods_fakturyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakturyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06375B5D8F52E0B6F126C1F /* Pods-fakturyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakturyTests.release.xcconfig"; path = "Target Support Files/Pods-fakturyTests/Pods-fakturyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 				F4EA60F6FBE6EF56EC076A64 /* Pods-fakturyTests.debug.xcconfig */,
 				B06375B5D8F52E0B6F126C1F /* Pods-fakturyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -185,6 +188,7 @@
 				F5922B3928C24A3B00F021F2 /* UserInputView.swift */,
 				F5922B4128C35D7E00F021F2 /* CustomButton.swift */,
 				F5922B4328C36AAC00F021F2 /* ApprovalView.swift */,
+				5D92421028C5D45D009AEA87 /* SummaryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +198,7 @@
 			children = (
 				F5922B0C28C2490100F021F2 /* UserInputViewController.swift */,
 				F5922B4528C36EBF00F021F2 /* ApprovalViewController.swift */,
+				5D92421228C5F51B009AEA87 /* SummaryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -449,9 +454,11 @@
 				F5922B3E28C251F200F021F2 /* MainCoordinator.swift in Sources */,
 				F5922B0D28C2490100F021F2 /* UserInputViewController.swift in Sources */,
 				F5922B4628C36EBF00F021F2 /* ApprovalViewController.swift in Sources */,
+				5D92421328C5F51C009AEA87 /* SummaryViewController.swift in Sources */,
 				F5922B3C28C24DAF00F021F2 /* Coordinator.swift in Sources */,
 				F5922B4228C35D7E00F021F2 /* CustomButton.swift in Sources */,
 				F5922B4428C36AAC00F021F2 /* ApprovalView.swift in Sources */,
+				5D92421128C5D45D009AEA87 /* SummaryView.swift in Sources */,
 				F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */,
 				F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */,
 			);

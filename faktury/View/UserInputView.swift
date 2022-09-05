@@ -48,7 +48,7 @@ class UserInputView: UIView {
     func setupStackView(){
         addSubview(stackView)
         stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fillEqually
         stackView.spacing = 20
         
         setConstraintsForStackView()
@@ -92,7 +92,7 @@ class UserInputView: UIView {
         stackView.addArrangedSubview(transferTitleTF)
         
         submitButton.buttonSetUp(text: "Submit")
-        
+        submitButton.heightAnchor.constraint(equalToConstant: 80).isActive = true
 
         stackView.addArrangedSubview(submitButton)
         
@@ -111,9 +111,9 @@ class UserInputView: UIView {
         titleLabel.textAlignment = .center
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -10),
+            titleLabel.heightAnchor.constraint(equalToConstant: 100),
+            titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 0),
             titleLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 0),
             titleLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: 0)
         ])
