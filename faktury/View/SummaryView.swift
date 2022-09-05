@@ -44,6 +44,7 @@ class SummaryView: UIView {
         statusLabel.text = wasPaymentSuccessful ? "Your payment has been succesful. Go back to First Screen" : "Sorry, your payment could not be processed. Try changing your transaction information"
         statusLabel.textColor = .black
         statusLabel.numberOfLines = 0
+        statusLabel.textAlignment = .center
         
         addSubview(statusLabel)
 
@@ -60,16 +61,29 @@ class SummaryView: UIView {
         statusLabel.translatesAutoresizingMaskIntoConstraints = false
         imageView!.translatesAutoresizingMaskIntoConstraints = false
 
+        let iconSize = 120.0
+        
         NSLayoutConstraint.activate([
-            imageView!.heightAnchor.constraint(equalToConstant: 120),
-            imageView!.widthAnchor.constraint(equalToConstant: 120),
-            imageView!.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 140),
-            imageView!.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 100),
-            imageView!.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -100),
+            imageView!.heightAnchor.constraint(equalToConstant: iconSize),
+            imageView!.widthAnchor.constraint(equalToConstant: iconSize),
+            imageView!.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 100),
+            imageView!.centerXAnchor.constraint(equalTo: centerXAnchor),
+
+
             statusLabel.topAnchor.constraint(equalTo: imageView!.bottomAnchor, constant: 20),
-            statusLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 100),
-            statusLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -100),
+            statusLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            statusLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            
             button.topAnchor.constraint(equalTo: statusLabel.bottomAnchor, constant: 120),
+            
+            //this looks nice but I think the buttons should be unified
+            //so it will look like in the first screen
+//            button.centerXAnchor.constraint(equalTo: centerXAnchor),
+//            button.widthAnchor.constraint(equalToConstant: 180),
+            button.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 20),
+            button.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            button.heightAnchor.constraint(equalToConstant: 60),
+
         ])
         
     }
