@@ -24,7 +24,7 @@ var mySummaryView = SummaryView(frame: UIScreen.main.bounds)
     @objc func buttonTapped(){
         let wasPaymentSuccesful = mySummaryView.wasPaymentSuccessful
       
-        coordinator?.eventOccured(with: wasPaymentSuccesful ? .showuserInputScreen : .showSummary)
+        coordinator?.eventOccured(with: wasPaymentSuccesful ? .goHome : .goBack)
     }
 
 }

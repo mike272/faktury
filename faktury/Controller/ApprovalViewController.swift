@@ -27,7 +27,7 @@ class ApprovalViewController: UIViewController, Coordinating {
     }
 
     @objc func CancelButtonTapped(){
-        coordinator?.eventOccured(with: .showuserInputScreen)
+        coordinator?.eventOccured(with: .goBack)
     }
 
     

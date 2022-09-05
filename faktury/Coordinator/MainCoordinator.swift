@@ -36,6 +36,13 @@ class MainCoordinator: Coordinator{
             navigationController?.pushViewController(vc, animated: true)
             break
             
+        case .goBack:
+            navigationController?.popViewController(animated: true)
+            break
+            
+        case .goHome:
+            navigationController?.popToRootViewController(animated: true)
+            break
         }
     }
     

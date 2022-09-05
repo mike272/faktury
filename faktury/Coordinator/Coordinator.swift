@@ -12,6 +12,8 @@ enum Event{
     case showSummary
     case showFinalisationScreen
     case showuserInputScreen
+    case goBack
+    case goHome
 }
 
 protocol Coordinator{
