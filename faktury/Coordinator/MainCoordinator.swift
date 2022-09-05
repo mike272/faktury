@@ -21,11 +21,21 @@ class MainCoordinator: Coordinator{
         switch type{
         case .showSummary:
             let vc = ApprovalViewController()
-            
+            vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
             break
         case .showFinalisationScreen:
+            let vc = SummaryViewController()
+            vc.coordinator = self
+            navigationController?.pushViewController(vc, animated: true)
             break
+            
+        case .showuserInputScreen:
+            let vc = UserInputViewController()
+            vc.coordinator = self
+            navigationController?.pushViewController(vc, animated: true)
+            break
+            
         }
     }
     

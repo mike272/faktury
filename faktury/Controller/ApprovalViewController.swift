@@ -9,7 +9,7 @@ import UIKit
 
 class ApprovalViewController: UIViewController, Coordinating {
 
-        var coordinator: Coordinator?
+    var coordinator: Coordinator?
         
     var myApprovalView = ApprovalView(frame: UIScreen.main.bounds)
         
@@ -17,8 +17,18 @@ class ApprovalViewController: UIViewController, Coordinating {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
             view.addSubview(myApprovalView)
+            
+            myApprovalView.approveButton.addTarget(self, action: #selector(confirmButtonTapped), for: .touchUpInside)
+            
+            myApprovalView.goBackButton.addTarget(self, action: #selector(CancelButtonTapped), for: .touchUpInside)
         }
+    @objc func confirmButtonTapped(){
+        coordinator?.eventOccured(with: .showFinalisationScreen)
+    }
 
+    @objc func CancelButtonTapped(){
+        coordinator?.eventOccured(with: .showuserInputScreen)
+    }
 
     
 

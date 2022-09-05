@@ -11,6 +11,7 @@ import UIKit
 enum Event{
     case showSummary
     case showFinalisationScreen
+    case showuserInputScreen
 }
 
 protocol Coordinator{

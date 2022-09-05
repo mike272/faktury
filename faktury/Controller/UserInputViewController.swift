@@ -12,10 +12,6 @@ import RxCocoa
 class UserInputViewController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     private var myView = UserInputView(frame: UIScreen.main.bounds)
-//
-//    override func loadView() {
-////        super.view = UserInputView(frame: UIScreen.main.bounds)
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
