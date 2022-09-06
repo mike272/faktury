@@ -12,6 +12,7 @@
 		5D92421128C5D45D009AEA87 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421028C5D45D009AEA87 /* SummaryView.swift */; };
 		5D92421328C5F51C009AEA87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421228C5F51B009AEA87 /* SummaryViewController.swift */; };
 		5D92421628C606ED009AEA87 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421528C606ED009AEA87 /* ViewModel.swift */; };
+		5D92421828C74931009AEA87 /* doubleLabelWithLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D92421728C74931009AEA87 /* doubleLabelWithLine.swift */; };
 		C6A6937596D767882BFB9D45 /* Pods_faktury_fakturyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4406F8D9CEB62AD41150AC48 /* Pods_faktury_fakturyUITests.framework */; };
 		F5922B0928C2490100F021F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0828C2490100F021F2 /* AppDelegate.swift */; };
 		F5922B0B28C2490100F021F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5922B0A28C2490100F021F2 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		5D92421028C5D45D009AEA87 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		5D92421228C5F51B009AEA87 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		5D92421528C606ED009AEA87 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5D92421728C74931009AEA87 /* doubleLabelWithLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doubleLabelWithLine.swift; sourceTree = "<group>"; };
 		73366C80F699AB979D701F2D /* Pods-faktury.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-faktury.debug.xcconfig"; path = "Target Support Files/Pods-faktury/Pods-faktury.debug.xcconfig"; sourceTree = "<group>"; };
 		7E1C1DF78725D8E216BB866F /* Pods_fakturyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakturyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06375B5D8F52E0B6F126C1F /* Pods-fakturyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakturyTests.release.xcconfig"; path = "Target Support Files/Pods-fakturyTests/Pods-fakturyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				F5922B4128C35D7E00F021F2 /* CustomButton.swift */,
 				F5922B4328C36AAC00F021F2 /* ApprovalView.swift */,
 				5D92421028C5D45D009AEA87 /* SummaryView.swift */,
+				5D92421728C74931009AEA87 /* doubleLabelWithLine.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5922B3A28C24A3B00F021F2 /* UserInputView.swift in Sources */,
+				5D92421828C74931009AEA87 /* doubleLabelWithLine.swift in Sources */,
 				F5922B3E28C251F200F021F2 /* MainCoordinator.swift in Sources */,
 				F5922B0D28C2490100F021F2 /* UserInputViewController.swift in Sources */,
 				F5922B4628C36EBF00F021F2 /* ApprovalViewController.swift in Sources */,

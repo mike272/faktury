@@ -40,10 +40,11 @@ class ApprovalViewController: UIViewController, Coordinating {
     }
     
     func getData(){
-        ViewModel.accountNrObs.bind(to: myApprovalView.accountNumberLabel.rx.text).disposed(by: disposeBag)
-        myApprovalView.accountNumberLabel.text = ViewModel.accountNrObs.value
-        myApprovalView.transactionTitleLabel.text = ViewModel.transactionTitleObs.value
-        myApprovalView.transactionAmountLabel.text = ViewModel.transactionAmountObs.value
+        //option 1. not really necessary to use bindings here but it is a possibility
+        ViewModel.accountNrObs.bind(to: myApprovalView.accNrCombo.dataLabel.rx.text).disposed(by: disposeBag)
+        //option 2. just take data on ViewDidLoad and present it
+        myApprovalView.tranTitleCombo.dataLabel.text = ViewModel.transactionTitleObs.value
+        myApprovalView.tranAmountNrCombo.dataLabel.text = ViewModel.transactionAmountObs.value
     }
 
     

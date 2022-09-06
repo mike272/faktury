@@ -11,13 +11,13 @@ class ApprovalView: UIView {
     
     var verticalStackView = UIStackView()
     
-    var accountNumberLabel = UILabel()
-    var transactionAmountLabel = UILabel()
-    var transactionTitleLabel = UILabel()
-    
     var goBackButton = CustomButton()
     var approveButton = CustomButton()
-    
+
+    var accNrCombo = doubleLabelWithLine()
+    var tranTitleCombo = doubleLabelWithLine()
+    var tranAmountNrCombo = doubleLabelWithLine()
+
     var horizontalStackView = UIStackView()
 
     override init(frame: CGRect) {
@@ -42,17 +42,18 @@ class ApprovalView: UIView {
         verticalStackView.spacing = 20
         verticalStackView.distribution = .equalSpacing
         
-        accountNumberLabel.text = "test1"
-        transactionTitleLabel.text = "test2"
-        transactionAmountLabel.text = "test3"
-        
-        
         addSubview(verticalStackView)
         setConstraintsForStackView()
 
-        verticalStackView.addArrangedSubview(accountNumberLabel)
-        verticalStackView.addArrangedSubview(transactionTitleLabel)
-        verticalStackView.addArrangedSubview(transactionAmountLabel)
+        accNrCombo.setUp(description: "ACCOUNT NUMBER")
+        tranTitleCombo.setUp(description: "TRANSACTION TITLE")
+        tranAmountNrCombo.setUp(description: "TRANSACTION AMOUNT")
+        
+
+        verticalStackView.addArrangedSubview(accNrCombo)
+        verticalStackView.addArrangedSubview(tranTitleCombo)
+        verticalStackView.addArrangedSubview(tranAmountNrCombo)
+
         verticalStackView.addArrangedSubview(horizontalStackView)
     }
     
@@ -78,6 +79,8 @@ class ApprovalView: UIView {
             verticalStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -40)
         ])
     }
+    
+   
     
 
 }
