@@ -32,11 +32,11 @@ class UserInputViewController: UIViewController, Coordinating {
     }
     
     func setUpBindings(){
-        myView.accountNumberTF.rx.text.bind(to: viewModel.accountNrObs).disposed(by: disposeBag)
-        myView.transferTitleTF.rx.text.bind(to: viewModel.transactionTitleObs).disposed(by: disposeBag)
-        myView.amountTF.rx.text.bind(to: viewModel.transactionAmountObs).disposed(by: disposeBag)
+        myView.accountNumberTF.rx.text.bind(to: ViewModel.accountNrObs).disposed(by: disposeBag)
+        myView.transferTitleTF.rx.text.bind(to: ViewModel.transactionTitleObs).disposed(by: disposeBag)
+        myView.amountTF.rx.text.bind(to: ViewModel.transactionAmountObs).disposed(by: disposeBag)
         
-        viewModel.isDatavalid.bind(to: myView.submitButton.rx.isEnabled).disposed(by: disposeBag)
+        ViewModel.isDatavalid.bind(to: myView.submitButton.rx.isEnabled).disposed(by: disposeBag)
 
     }
 
