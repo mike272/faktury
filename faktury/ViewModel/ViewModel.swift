@@ -33,7 +33,21 @@ class ViewModel{
     }
     
     func validate(accNr: String, tranTitle: String, tranAmount: String) -> Bool{
-        return accNr.count == 6 && tranTitle.count > 0 && !tranAmount.isEmpty
+//        return accNr.count == 6 && tranTitle.count > 0 && !tranAmount.isEmpty
+        if accNr.count != 6 || accNr.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+        {
+            return false
+        }
+        if tranAmount.isEmpty || tranAmount.rangeOfCharacter(from: CharacterSet.decimalDigits) == nil
+        {
+            return false
+        }
+        if tranTitle.isEmpty
+        {
+            return false
+        }
+        
+        return true
     }
 
 }
