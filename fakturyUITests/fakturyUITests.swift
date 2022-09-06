@@ -8,6 +8,8 @@
 import XCTest
 
 class fakturyUITests: XCTestCase {
+    
+    var app: XCUIApplication!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -15,20 +17,69 @@ class fakturyUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        try super.setUpWithError()
+        continueAfterFailure = true
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+
+//    override func tearDownWithError() throws {
+//
+//    }
+
+    func testIfButtonIsDisabled() throws {
+        let submitButton: XCUIElement =  XCUIApplication().buttons["Submit"]
+        
+        XCTAssertEqual(submitButton.isEnabled, false)
+
+    }
+    
+    
+    
+    func testAccNrTextField(){
+        let textField = app.textFields["012345"]
+        textField.tap()
+        textField.typeText("123456")
+        XCTAssertEqual(textField.value as! String, "123456")
+    }
+    func testTitleTextField(){
+        let textField = app.textFields["Transfer of funds"]
+        textField.tap()
+        textField.typeText("monkey")
+        XCTAssertEqual(textField.value as! String, "monkey")
+    }
+    func testAmountTextField(){
+        let textField = app.textFields["200"]
+        textField.tap()
+        textField.typeText("10000")
+        XCTAssertEqual(textField.value as! String, "10000")
+    }
+    
+    func testButtonEnabled(){
+        var textField = app.textFields["012345"]
+        textField.tap()
+        textField.typeText("123456\n")
+        
+        //hide virtual keyboard
+        
+        
+        textField = app.textFields["Transfer of funds"]
+        textField.tap()
+        textField.typeText("title\n")
+        
+         
+        
+        textField = app.textFields["200"]
+        textField.tap()
+        textField.typeText("1000\n")
+        
+        
+        let button = app.buttons["Submit"]
+        
+        XCTAssertTrue(button.isEnabled)
+    }
+    
+    
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {

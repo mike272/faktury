@@ -77,6 +77,10 @@ class UserInputView: UIView {
         amountTF.placeholder = "200"
         transferTitleTF.placeholder = "Transfer of funds"
         
+        accountNumberTF.resignFirstResponder()
+        amountTF.resignFirstResponder()
+        transferTitleTF.resignFirstResponder()
+        
         accountNumberTF.borderStyle = .roundedRect
         amountTF.borderStyle = .roundedRect
         transferTitleTF.borderStyle = .roundedRect
